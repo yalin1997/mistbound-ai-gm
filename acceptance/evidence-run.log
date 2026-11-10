@@ -1,0 +1,77 @@
+[
+  {
+    "name": "UI single-player actual random-dice complete quest and sequel",
+    "status": "PASS",
+    "detail": {
+      "phase": "won",
+      "gold": 15,
+      "level": 2,
+      "events": 18,
+      "rolls": [
+        "獨行觀察者 的交談：D20 13 ＋ 3 ／ DC 10 → 成功",
+        "獨行觀察者 的調查／操作：D20 16 ＋ 2 ／ DC 10 → 成功",
+        "獨行觀察者 的交談：D20 16 ＋ 3 ／ DC 12 → 成功",
+        "獨行觀察者 的調查／操作：D20 11 ＋ 2 ／ DC 10 → 成功"
+      ]
+    }
+  },
+  {
+    "name": "UI saved pending check survives real server restart, dice receipt cannot reroll",
+    "status": "PASS",
+    "detail": {
+      "pendingIdPreserved": true,
+      "oldCheckReplayStatus": 409,
+      "revision": 18
+    }
+  },
+  {
+    "name": "UI mobile pages usable at 360 x 800, free input and map navigation accessible",
+    "status": "PASS",
+    "detail": {
+      "scrollWidth": 360,
+      "innerWidth": 360
+    }
+  },
+  {
+    "name": "UI two-party invite, travel consensus, denied wrong turn, chat, disconnect and host transfer",
+    "status": "PASS",
+    "detail": {
+      "wrongTurnHttp": 403,
+      "scene": "marsh",
+      "hostTransferred": true,
+      "presenceAfterReconnect": [
+        {
+          "userId": "606e59f7-7c51-4680-8ce3-c5d3b34275e7",
+          "online": true,
+          "offlineSince": null
+        },
+        {
+          "userId": "581cd612-fe30-4677-b6cb-eb1de1d5c250",
+          "online": true,
+          "offlineSince": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "BUG probe: confusion should last until next check, but defend clears it",
+    "status": "PASS",
+    "detail": {
+      "expected": "next check modifier = 1 (insight 2 + human 1 - confusion 2)",
+      "actualModifier": 3,
+      "hp": 20,
+      "confusedAfterDefend": 0,
+      "defectConfirmed": true
+    }
+  },
+  {
+    "name": "BUG probe: critical-success observe repeatedly awards new loot in exhausted harbor",
+    "status": "PASS",
+    "detail": {
+      "observations": 12,
+      "uniqueClues": 1,
+      "gold": 36,
+      "defectConfirmed": true
+    }
+  }
+]

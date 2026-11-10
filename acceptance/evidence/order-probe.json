@@ -1,0 +1,19 @@
+{
+  "firstWon": "won",
+  "initialJoinOrder": [
+    "序甲",
+    "序乙",
+    "序丙"
+  ],
+  "afterCombatOrder": [
+    "序乙",
+    "序甲",
+    "序丙"
+  ],
+  "secondChapterOrder": [
+    "序乙",
+    "序甲",
+    "序丙"
+  ],
+  "secondChapterActor": "序乙"
+}
